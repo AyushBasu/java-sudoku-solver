@@ -53,7 +53,7 @@ public class SudokuSolver
       for (int j = 0; j < board[i].length; j++) {
         validNumber = false;
         while (!validNumber) {
-          System.out.print("Number in position: ");
+          System.out.print("Number in position [r" + (i + 1) + ", c" + (j + 1) + "]: ");
           strPosNumber = kb.nextLine();
           if (strPosNumber.compareTo("0") >= 0 && strPosNumber.compareTo("9") <= 0) {
             posNumber = Integer.parseInt(strPosNumber);
